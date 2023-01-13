@@ -1,0 +1,20 @@
+form{
+    form-personal-info {
+    display: table;
+    }
+}
+
+div{
+    form-personal-info {
+    display: table-row;
+    }
+}
+
+label,
+input {    
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+}

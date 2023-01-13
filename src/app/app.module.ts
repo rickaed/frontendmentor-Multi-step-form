@@ -8,6 +8,7 @@ import { PersonalInfoComponent } from './personal-info/personal-info.component';
 import { PlanComponent } from './plan/plan.component';
 import { AddOnComponent } from './add-on/add-on.component';
 import { ResumComponent } from './resum/resum.component';
+import { ThankyouComponent } from './thankyou/thankyou.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ResumComponent } from './resum/resum.component';
     PersonalInfoComponent,
     PlanComponent,
     AddOnComponent,
-    ResumComponent
+    ResumComponent,
+    ThankyouComponent
   ],
   imports: [
     BrowserModule,

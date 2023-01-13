@@ -1,21 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: "Ubuntu";
+    src: url(../src/assets/fonts/Ubuntu-Regular.ttf),url(../src/assets/fonts/Ubuntu-Medium.ttf),url(../src/assets/fonts/Ubuntu-Regular.ttf);
+    font-weight: bold, medium, regular;
+}
+
 :root {
-//color
+    //color
     --main-bg-color: hsl(229, 24%, 87%);
-    -Marine-blue: hsl(213, 96%, 18%);
+    --title-color: hsl(213, 96%, 18%);
     -Purplish-blue: hsl(243, 100%, 62%);
     -Pastel-blue: hsl(228, 100%, 84%);
     -Light-blue: hsl(206, 94%, 87%);
     -Strawberry-red: hsl(354, 84%, 57%);
 
     -Cool-gray: hsl(231, 11%, 63%);
-    -Light-gray: hsl(229, 24%, 87%);
+    --menu-li: hsl(229, 24%, 87%);
     -Magnolia: hsl(217, 100%, 97%);
     -Alabaster: hsl(231, 100%, 99%);
-    -White: hsl(0, 0%, 100%);
-//font size
-    --Font-size-paragraph: 16px
+    --background-card: hsl(0, 0%, 100%);
+    //font 
+    font-family: "Ubuntu", sans-serif;
 
+    --Font-size-paragraph: 16px
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 body {
@@ -23,20 +38,25 @@ body {
     max-width: 375px;
     height: 100vh;
     overflow: hidden;
+    font-size: var(--Font-size-paragraph);
 
     .sidebar {
-        background: url(./assets/images/bg-sidebar-mobile.svg) no-repeat fixed top/cover;
-        width: 100%;
+        background: url(./assets/images/bg-sidebar-mobile.svg);
+        width: 375px;
+        height: 172px;
     }
 
 }
-p{
+
+p {
     font-size: var(--Font-size-paragraph);
-    
-}
-h1{
 
 }
+
+h1 {
+    color: var(--title-color);
+}
+
 @media (min-width : 376) {
     body {
         max-width: 1440px;
