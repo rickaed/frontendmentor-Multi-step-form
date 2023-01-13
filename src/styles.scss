@@ -1,1 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+//color
+    --main-bg-color: hsl(229, 24%, 87%);
+    -Marine-blue: hsl(213, 96%, 18%);
+    -Purplish-blue: hsl(243, 100%, 62%);
+    -Pastel-blue: hsl(228, 100%, 84%);
+    -Light-blue: hsl(206, 94%, 87%);
+    -Strawberry-red: hsl(354, 84%, 57%);
+
+    -Cool-gray: hsl(231, 11%, 63%);
+    -Light-gray: hsl(229, 24%, 87%);
+    -Magnolia: hsl(217, 100%, 97%);
+    -Alabaster: hsl(231, 100%, 99%);
+    -White: hsl(0, 0%, 100%);
+//font size
+    --Font-size-paragraph: 16px
+
+}
+
+body {
+    background-color: var(--main-bg-color);
+    max-width: 375px;
+    height: 100vh;
+    overflow: hidden;
+
+    .sidebar {
+        background: url(./assets/images/bg-sidebar-mobile.svg) no-repeat fixed top/cover;
+        width: 100%;
+    }
+
+}
+p{
+    font-size: var(--Font-size-paragraph);
+    
+}
+h1{
+
+}
+@media (min-width : 376) {
+    body {
+        max-width: 1440px;
+    }
+}
