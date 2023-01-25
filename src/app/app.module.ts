@@ -9,6 +9,7 @@ import { PlanComponent } from './plan/plan.component';
 import { AddOnComponent } from './add-on/add-on.component';
 import { ResumComponent } from './resum/resum.component';
 import { ThankyouComponent } from './thankyou/thankyou.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],
